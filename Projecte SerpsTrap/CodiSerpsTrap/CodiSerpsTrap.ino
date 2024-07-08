@@ -456,7 +456,7 @@ void loop() {
     if(minutes % int_lora == 0){
       send_packet();
       int env = millis();
-      while(millis() - env < 3000){os_runstep();}
+      while(millis() - env < 2000){os_runstep();}
     }
     
   }
